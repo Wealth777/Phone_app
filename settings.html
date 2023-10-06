@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<center>
+    <div class="all">
+
+        <div class="container">
+
+            <div class="top"> 
+                <div class="smallcircle"></div>
+                <div class="bigcircle"></div>
+                <div class="smacircle"></div>
+            </div>
+
+            <center> 
+                <div id="screen" class="innercontainer" ondblclick="ondb()">
+                    <!-- Begining of Homepage -->
+                    <div id="home" ondblclick="off()" style="display: none; background-image: url(images\ \(10\).jpeg); border-radius: 18px;  ">
+                        <div style="background-color: wheat (1); ">
+                            <img src="whitesignal1.png" style="margin-left: 240px;" alt="" >
+                            <img src="whitesignal1.png" alt="">
+                            <img src="whitebattery.png" class="battry" alt="">
+                        </div>
+    
+                        <div class="datetime">
+                            <div id="displaydate" style="color: white;"></div>
+							<div id="displaytime" style="font-size: 50px; color: white;"><p>sd</p></div>
+                        </div>
+                        
+                        <div class="weather">
+                            <img src="download (1)-weather.jpg" onclick="weatheApp()" class="wea" alt="">
+                        </div>
+    
+                        <div class="apps">
+                            <img src="download-cal.png" onclick="calculator()" class="cal" alt="">
+                            <img src="chrome.png" class="chrome" alt="">
+                            <img src="game.png" onclick="love()" class="gam" alt="">
+                            <img src="images (1)-touch.jpg" onclick="light()" class="mus" alt="">
+                        </div>
+    
+                        <div class="cicl"> 
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+    
+                        <div class="app">
+                            <img src="camera.png" style="cursor: pointer;" alt="">
+                            <img src="phone.png" class="phone" alt="">
+                            <img src="contact.png" class="cont" alt="">
+                            <img src="message.png" class="mes" alt="">
+                        </div>
+    
+                        <div class="icons">
+                            <img src="square.png" style="cursor: pointer;" alt="">
+                            <img src="circle.png" class="ion" alt="">
+                            <img src="sortleft.png"  class="ion" alt="">
+                        </div>
+                    </div>
+
+                    <!-- End of hopepage -->
+                    <!-- Begining of Calculator page -->
+
+                    <div id="calcu" ondblclick="off()" style="display: none; background-color: white; border-radius: 20px;">
+                        <div style="background-color: white; border-radius: 18px;">
+                            <div class="" style="background-color: wheat;">
+                                <img src="whitesignal1.png" alt="" style="margin-left: 240px;font-style: black;">
+                                <img src="whitesignal1.png" alt="">
+                                <img src="whitebattery.png" class="battry" alt="">
+                            </div>
+    
+                            <div class="dispaly" style="margin-top: 110px;">
+                                <input type="text" id="displaycalcu" >
+                            </div>
+                            <div style="margin-top: 30px;">
+                                <input type="button" value="AC" onclick="displaycalcu.value ='' " class="calbtm" style="background-color: rgb(39, 230, 39);">
+                                <input type="button" value="DE" onclick="displaycalcu.value = displaycalcu.value.toString().slice(0, -1) " class="calbtm" style="background-color: rgb(185, 7, 7);">
+                                <input type="button" value="/" onclick="displaycalcu.value +='/' " class="calbtm" >
+                            </div>
+            
+                            <div>
+                                <input type="button" value="7" onclick="displaycalcu.value += '7' " class="calbtm" >
+                                <input type="button" value="8" onclick="displaycalcu.value += '8' " class="calbtm">
+                                <input type="button" value="9" onclick="displaycalcu.value += '9' " class="calbtm">
+                                <input type="button" value="*" onclick="displaycalcu.value +='*' " class="calbtm">
+                            </div>
+            
+                            <div>
+                                <input type="button" value="4" onclick="displaycalcu.value += '4' " class="calbtm">
+                                <input type="button" value="5" onclick="displaycalcu.value += '5' " class="calbtm">
+                                <input type="button" value="6" onclick="displaycalcu.value += '6' " class="calbtm">
+                                <input type="button" value="-" onclick="displaycalcu.value +='-' " class="calbtm">
+                            </div>
+            
+                            <div>
+                                <input type="button" value="1" onclick="displaycalcu.value += '1' " class="calbtm">
+                                <input type="button" value="2" onclick="displaycalcu.value += '2' " class="calbtm">
+                                <input type="button" value="3" onclick="displaycalcu.value += '3' " class="calbtm">
+                                <input type="button" value="+" onclick="displaycalcu.value +='+' " class="calbtm">
+                            </div>
+            
+                            <div>
+                                <input type="button" value="00" onclick="displaycalcu.value += '00' " class="calbtm">
+                                <input type="button" value="0" onclick="displaycalcu.value += '0' " class="calbtm">
+                                <input type="button" value="." onclick="displaycalcu.value +='.' " class="calbtm" >
+                                <input type="button" value="=" onclick="displaycalcu.value =eval(displaycalcu.value) " class="calbtm" style="background-color: rgb(39, 230, 39);">
+                            </div>
+                        </div>
+                        <div class="icons">
+                            <img src="square.png" style="cursor: pointer;" alt="">
+                            <img src="circle.png" onclick="goBackk()" class="ion" alt="">
+                            <img src="sortleft.png" onclick="goBack()" class="ion" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Calculator End -->
+                    <!-- weather app -->
+
+                    <div id="wealth" ondblclick="off()" class="container-fluid" style="display: none;">
+                        
+                        <div class="weatherback">
+                            <div class="" style="background-color: wheat;">
+                                <img src="whitesignal1.png" alt="" style="margin-left: 240px;font-style: black;">
+                                <img src="whitesignal1.png" alt="">
+                                <img src="whitebattery.png" class="battry" alt="">
+                            </div>
+
+                            <h2 style="color: #fff;">TODAY'S REPORT</h2>
+
+                            <center>
+                                <div class="row py-4"></div>
+                                <div class="col-9 mx-auto  py-1"  id="container">
+                                <h2 style="color: black; font-size: 30px;margin-top: 40px;">Weather Forecast</h2>
+                                
+                                <input class="formcontrol" type="text" placeholder="Enter your city" id="userInput"> 
+                                <br>
+                                <button onclick="fetchInfo()" id="btn" class="weatherbutton"><img src="search2.png" alt="" class="weatherbuttonimg"></button>
+                    
+                                
+                                <div id="disp"></div>
+                                <div id="des" style="font-size: 40px; color: whitesmoke;"></div>
+                                <img src="" alt="" class="weatherimg" id="iconweather">
+                                <div id="coun" style="font-size: 10px; color: black;"></div>
+                                <div id="temp" style="font-size: 10px;"></div>
+                                <div id="nam" style="font-size: 10px; color: black"></div>
+                                <div id="wind" style="font-size: 10px; color: black;"></div>
+                                <div id="hum" style="font-size: 10px; color: black;"></div>
+                               
+                            </div>
+                        </div>
+
+                        <div class="icons">
+                            <img src="square.png" style="cursor: pointer;" alt="">
+                            <img src="circle.png" onclick="goBack()" class="ion" alt="">
+                            <img src="sortleft.png" onclick="goBack()" ondblclick="of()" class="ion" alt="">
+                        </div>
+                       
+                        </center>
+                    </div>
+
+                    <!-- Weather End -->
+                    <!-- lightborb -->
+
+                    <div id="lightBomb" style="display: none;" class="lightContainer">
+                        
+                        <div class="" style="background-color: wheat;">
+                            <img src="whitesignal1.png" alt="" style="margin-left: 240px;font-style: black;">
+                            <img src="whitesignal1.png" alt="">
+                            <img src="whitebattery.png" class="battry" alt="">
+                        </div>
+
+                        <div class="lightgangan">
+                            <button class="lightbtm" onclick="document.getElementById('light').src='pic_bulbon.gif'">on</button>
+                        
+                            <img id="light" src="pic_bulboff.gif" style="width:100px">
+                        
+                            <button class="lightbtm" onclick="document.getElementById('light').src='pic_bulboff.gif'">off</button>
+                        </div>
+
+                        
+                        <div class="lighticons">
+                            <center>
+                                <img src="square.png" style="cursor: pointer;" alt="">
+                                <img src="circle.png" onclick="goBack()" class="ion" alt="">
+                                <img src="sortleft.png" onclick="goBack()" ondblclick="of()" class="ion" alt="">
+                            </center>
+                        </div>
+                    </div>
+
+                    <!-- Bomb End -->
+                    <!-- LoveCal -->
+
+                    <!-- <div id="loveCal" style="display: none;">
+                        <div  class="loveCont">
+                            <div class="loveContainer">
+                                <input type="text" placeholder="Lover's Name" id="male" class="loveinput">
+                                <input type="text" placeholder="Player's Name" id="female" class="loveinput">
+                        
+                                <br>
+                        
+                                <button onclick="cal()" class="lovebutton">Calculate</button>
+                            </div>
+                        
+                            
+                            <div class="disp">
+                        
+                                <center> <div id="result"></div> </center>
+                         
+                                 <center> <div id="disp"></div> </center>
+                         
+                                <center>  <div id="displayer"></div> </center>
+                         
+                            </div>
+                        
+                           <button onclick="newPage()" class="loveHis">Check History</button>
+                        
+                           <center>
+                                <div class="history">
+                                    <center><div id="his"></div></center>
+                                   <center> <div id="rel"></div></center>
+                                </div>
+                           </center>
+                        </div>
+                    </div> -->
+
+                    <!-- settings -->
+                    
+                    <div id="settings">
+                        <div>
+                            <div style="background-color: wheat; border-radius: 10px 10px 0px 0px;">
+                                <img src="whitesignal1.png" style="margin-left: 240px;" alt="" >
+                                <img src="whitesignal1.png" alt="">
+                                <img src="whitebattery.png" class="battry" alt="">
+                            </div>
+
+                            <input type="text" placeholder="search for settings">
+
+                          <div>
+                            <p>Sign in with Email</p>
+                            <p>My Phone</p>
+                          </div>
+
+                          <hr>
+
+                          <div>
+                            <p>Sim & network settings</p>
+                            <p>wifi</p>
+                            <p>Hotspot & trthering</p>
+                          </div>
+
+                          <hr>
+
+                          <div>
+                            <p>Phone manual</p>
+                          </div>
+
+                            <div class="settingsicons">
+                                <img src="square.png" style="cursor: pointer;" alt="">
+                                <img src="circle.png" class="ion" alt="">
+                                <img src="sortleft.png"  class="ion" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+
+        </div>
+
+    </div>
+
+    <div class="btmspower">
+        <button></button>
+        <br>
+        <button class="btm"></button>
+        <br>
+        <button onclick="on()"></button> 
+    </div>
+
+</center>
+
+    <script src="script.js"></script>
+</body>
+</html>

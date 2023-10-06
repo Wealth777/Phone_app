@@ -1,0 +1,618 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.all {
+    display: flex;
+}
+
+.container {
+    margin-top: 50px;
+    margin-left: 400px;
+    width: 350px;
+    height: 590px;
+    border: 2px solid;
+    border-radius: 28px;
+    background-color: black;
+}
+
+.top {
+    display: flex;
+    margin-left: 50px;
+}
+
+.smallcircle {
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid;
+    border-radius: 28px;
+    background-color: rgb(95, 87, 87);
+}
+
+.smacircle {
+    margin-top: 20px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid;
+    border-radius: 28px;
+    background-color: rgb(95, 87, 87);
+}
+
+.bigcircle {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100px;
+    height: 13px;
+    border: 2px solid;
+    border-radius: 28px;
+    background-color: rgb(95, 87, 87);
+}
+
+.innercontainer {
+    margin-top: 15px;
+    width: 320px;
+    height: 520px;
+    border: 2px solid;
+    border-radius: 22px;
+    background-color: black;
+}
+
+.battry {
+    margin-left: 9px;
+}
+
+.datetime {
+    margin-top: 50px;
+}
+
+.weather {
+    margin-top: 94px;
+}
+
+.apps {
+    margin-top: 10px;
+}
+
+.wea {
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.cal {
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.chrome {
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.gam {
+    background-color: yellow;
+    border-radius: 5px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.mus {
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 35px;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+}
+
+.cicl {
+    display: flex;
+    margin-left: 100px;
+}
+
+.circle {
+    margin-left: 20px;
+    margin-top: 45px;
+    width: 13px;
+    height: 13px;
+    border-radius: 28px;
+    background-color: whitesmoke;
+}
+
+.app {
+    margin-top: 40px;
+    margin-bottom: 4px;
+}
+
+.phone {
+    background-color: green;
+    border-radius: 5px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.cont {
+    background-color: blue;
+    border-radius: 5px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.mes {
+    background-color: blue;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 5px;
+    margin-left: 35px;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.icons {
+    background: rgb(68, 61, 61);
+    width: 317px;
+    height: 30px;
+    border-radius: 0px 0px 20px 20px;
+    padding-top: 6px;
+}
+
+.ion {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.btmspower {
+    margin-top: -540px;
+    margin-right: 558.5px;
+    float: right;
+}
+
+button {
+    background-color: black;
+    margin-top: 30px;
+    width: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.btm {
+    margin-top: 10px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.calbtm {
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: white;
+}
+
+.weatherback {
+    background-image: url(images.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 483px;
+}
+
+#displaycalcu {
+    width: 290px;
+    height: 50px;
+    font-size: 40px;
+    border: none;
+}
+
+.formcontrol {
+    margin-top: 20px;
+    width: 170px;
+    margin-bottom: -10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 6px;
+    background-color: wheat;
+    border: none;
+}
+
+.formcontrol::placeholder {
+    color: black;
+    opacity: 0.5;
+    padding-left: 45px;
+}
+
+.weatherbutton {
+    margin-top: 10px;
+    width: 50px;
+    background-color: red;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+.weatherbuttonimg {
+    width: 25px;
+}
+
+.weatherimg {
+    width: 20px;
+}
+
+.weatherbutton:hover {
+    background-color: green;
+    color: black;
+}
+
+.lightContainer {
+    margin-left: -334px;
+    margin-top: 102px;
+    background-color: whitesmoke;
+    height: 483px;
+}
+
+.lightgangan {
+    margin-top: 90px;
+    margin-left: 45px;
+}
+
+.lightbtm {
+    width: 60px;
+    background-color: white;
+    border-radius: 18px;
+}
+
+.lightbtm:hover {
+    background-color: black;
+    color: white;
+}
+
+.lighticons {
+    background: rgb(68, 61, 61);
+    width: 317px;
+    height: 30px;
+    border-radius: 0px 0px 20px 20px;
+    padding-top: 6px;
+    margin-top: 178px;
+}
+
+.loveCont {
+    margin-left: -334px;
+    margin-top: -90px;
+    height: 483px;
+    width: 320px;
+}
+
+.loveContainer {
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+.loveinput {
+    width: 150px;
+    height: 37px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.loveinput:hover {
+    cursor: pointer;
+    border: 4px solid rgb(101, 101, 248);
+    box-shadow: 3px 3px 5px;
+}
+
+.loveinput::placeholder {
+    font-size: 14px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lovebutton {
+    background-color: chartreuse;
+    width: 60px;
+    height: 20px;
+    border-radius: 6px;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.lovebutton:hover {
+    background-color: red;
+    color: white;
+}
+
+.disp {
+    margin-left: 270px;
+    border: 3px solid white;
+    width: 800px;
+}
+
+.loveh3 {
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lovep {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loveh1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loveh2 {
+    margin-top: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.history {
+    background-color: red;
+    margin-top: 10px;
+    width: 500px;
+}
+
+#his {
+    margin-top: 10px;
+}
+
+.loveHis {
+    background-color: chartreuse;
+    width: 60px;
+    height: 20px;
+    border-radius: 6px;
+    font-size: 8px;
+    margin-top: 20px;
+}
+
+.settings {
+    background-color: rgb(255, 255, 255);
+    height: 480.5px;
+    width: 313px;
+    margin-left: -350px;
+    margin-top: 100px;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.settingsicons {
+    background: rgb(68, 61, 61);
+    width: 314px;
+    height: 30px;
+    border-radius: 0px 0px 20px 20px;
+    padding-top: 6px;
+    margin-top: 213px;
+}
+
+.settingsemal {
+    margin-top: 20px;
+    margin-left: -120px;
+}
+
+.settingnet {
+    margin-top: 20px;
+    margin-left: -90px;
+}
+
+.maualon {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.maualn {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.manualicons {
+    background: rgb(68, 61, 61);
+    width: 314px;
+    height: 30px;
+    border-radius: 0px 0px 20px 20px;
+    padding-top: 6px;
+    margin-top: 63px;
+}
+
+.num {
+    margin-right: 10px;
+}
+
+.power {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* css */
+
+#forgame {
+    background-color: red !important;
+    height: 490px;
+    width: 310px;
+    position: relative;
+    user-select: none;
+    display: none;
+    margin-left: -330px;
+    margin-top: 100px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+h3 {
+    color: white;
+    font-size: 20pt;
+    text-align: center;
+    padding-top: 5px;
+    font-family: Bahnschrift;
+}
+
+.player {
+    background-color: rgb(230, 233, 26);
+    display: flex;
+    flex-direction: column;
+}
+
+.ppp {
+    color: rgb(216, 19, 19);
+    font-size: 10pt;
+    text-align: center;
+}
+
+.player input {
+    border: 1px solid grey;
+    background-color: transparent;
+    border-radius: 20px;
+    width: 70%;
+    margin: 2px auto;
+    color: white;
+    font-size: 8pt;
+    outline: none;
+    text-align: center;
+}
+
+.player button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px;
+    margin: 2px auto;
+    background-color: green;
+    color: white;
+    outline: none;
+}
+
+.nameplayer {
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+    padding-left: 20px;
+    font-family: Consolas;
+}
+
+::placeholder {
+    color: white;
+    text-align: center;
+}
+
+.allforgame {
+    /*margin-top: 3px;*/
+    /*background-color: red;*/
+}
+
+.rowforgame {
+    display: flex;
+    flex-direction: row;
+    width: 170px;
+    margin: 0 auto;
+}
+
+.rowforgame div {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60px;
+    height: 60px;
+    border-right: 3px inset silver;
+    border-bottom: 3px inset silver;
+    color: green;
+    font-size: 20pt;
+    padding: 5px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.scoreboard {
+    width: 90%;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.firstplayer {
+    height: 50px;
+    width: 30%;
+    color: white;
+    font-size: 12pt;
+    text-align: center;
+    padding: 15px;
+}
+
+.score {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 30px;
+    width: 30%;
+    border-radius: 50px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top: 2px solid silver;
+    box-shadow: 2px 2px 1px 1px rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.score div {
+    text-align: center;
+    font-size: 12pt;
+    color: white;
+}
+
+.secondplayer {
+    height: 50px;
+    width: 30%;
+    color: white;
+    font-size: 10pt;
+    text-align: center;
+    padding: 15px;
+}
+
+.replay {
+    margin: 3px auto;
+    width: 100px;
+    height: 10px;
+    margin-top: -20px;
+}
+
+.replaybutton {
+    width: 100px;
+    background-color: green;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+
+}
+
+.gamesicons {
+    background: rgb(68, 61, 61);
+    width: 311px;
+    height: 30px;
+    border-radius: 0px 0px 20px 20px;
+    padding-top: 6px;
+    margin-top: 70px;
+}
